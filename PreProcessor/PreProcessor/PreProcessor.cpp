@@ -2,11 +2,10 @@
 //
 
 #include "stdafx.h"
-
-void ChooseFunctions(){}
+#include "calculate_sphere_volume.h"
 
 int main()
 {
-    return 0;
+    
 }
 
