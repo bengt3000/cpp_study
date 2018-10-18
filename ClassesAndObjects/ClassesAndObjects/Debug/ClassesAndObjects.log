@@ -1,0 +1,5 @@
+﻿  ClassesAndObjects.cpp
+c:\git\cpp_study\classesandobjects\classesandobjects\bank.h(107): warning C4101: 'e': unreferenced local variable
+c:\git\cpp_study\classesandobjects\classesandobjects\classesandobjects.cpp(15): warning C4101: 'd': unreferenced local variable
+c:\git\cpp_study\classesandobjects\classesandobjects\bank.h(110): warning C4715: 'Bank::cashInOut': not all control paths return a value
+  ClassesAndObjects.vcxproj -> C:\git\cpp_study\ClassesAndObjects\Debug\ClassesAndObjects.exe
