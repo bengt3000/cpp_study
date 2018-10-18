@@ -7,14 +7,21 @@
 using namespace std;
 
 bool isPrime(int p) {
-	for (int i = 2; i <= (p / 2); i++)
+	// Highest supported prime is 2147483629
+	if (p < 2)
+		return false;
+	if (p < 4)
+		return true;
+	if (p % 2 == 0 || p % 3 == 0)
+		return false;
+	int i = 5;
+	while (i*i <= p)
 	{
-		cout << i << endl;
-		if (0 == (p % i))
+		if ((p%i == 0) || ((p % (i + 2))==0))
 			return false;
+		i += 6;
 	}
 	return true;
-
 }
 
 // prime class
@@ -63,8 +70,8 @@ int main()
 	while (true)
 	{
 		cin >> d;
-		Prime myPrime = d;
-		cout << myPrime.getValue() << endl;
+		//Prime myPrime = d;
+		//cout << myPrime.getValue() << endl;
 		if (isPrime(d))
 			cout << "true" << endl;
 		else
